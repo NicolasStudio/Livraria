@@ -1,0 +1,75 @@
+.boxProduct{
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    border: 2px solid #333;
+
+}
+
+.boxImgProduto{
+    display: flex;
+    padding: 5px;
+}
+
+.boxImgProduto img{
+    width: 200px;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.boxImgProduto img:hover{
+    transition: 400ms;
+    transform: scale(1.5); /* Ampliar a imagem em 1.5x */
+    cursor: zoom-in;
+}
+
+.boxInfoProduto{
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.titleLivro{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.autorLivro{
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.temaLivro{
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.descricao{
+    width: 80%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    justify-content: center;
+}
+
+.summaryDesc{
+    font-size: 20px;
+}
+.summaryDesc:hover{
+    color: #000;
+}
+
+
+/* QR code */
+#qr-code {
+    display: flex;
+    opacity: 0;
+    padding: 30px 0;
+    margin: 20px 15px;
+    justify-content: center;
+    border-radius: 5px;
+    transition: 0.2s;
+  }
+
+  .container.active #qr-code {
+    opacity: 1;
+  }

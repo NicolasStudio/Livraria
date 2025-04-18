@@ -1,0 +1,192 @@
+/* Ativa o carrinho Bola */
+.carrinhoBola {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    right: 2%;
+    top: 80%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #555;
+    z-index: 55;
+}
+
+/* Ativar a notificação */
+.notificacao {
+    border-radius: 50%;
+    border: 5px solid red;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+.imgCarrinho {
+    /* Estilos para a imagem do carrinho */
+    transition: 250ms;
+    transform: rotate(0deg);
+    width: 32px;
+}
+
+.imgCarrinho:hover{
+    width: 32px;
+    transition: 250ms;
+    transform: rotate(-20deg);
+}
+
+/* Itens do carrinho */
+.carrinhoProdutos{
+    z-index: 5;
+    display: none;
+    position: fixed;
+    top: 6rem;
+    right: 0;
+    border: 2px #333 solid;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    width: 35%;
+    height: 90%;
+    background-color: #fcfcfc;
+    box-shadow: 0px 2px 0.3rem #333;
+    overflow: auto;
+}
+
+.containerCarrinho{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+}
+
+.fecharcarrinho{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 50%;
+    border: 2px solid red;
+    background-color: red;
+    transition: 250ms;
+    color: #fcfcfc;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.fecharcarrinho:hover{
+    background-color: #fd3838;
+    transition: 250ms;
+}
+
+.titleCarrinho{
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+/* Itens */
+/* Contêiner principal do produto */
+.product {
+    border: 2px solid #555;
+    width: 100%;
+    max-width: 550px;
+    display: flex; /* Use flexbox para alinhar os itens */
+    margin-bottom: 20px; /* Adicionando um espaçamento entre os produtos */
+}
+
+/* Imagem do produto */
+.imgProduto {
+    width: 120px;
+    height: 200px; /* Permitindo que a altura seja ajustada automaticamente */
+}
+
+/* Detalhes do produto */
+.product-details {
+    padding: 10px;
+    flex-grow: 1; /* Permite que este div cresça para ocupar todo o espaço restante */
+}
+
+/* Título do livro */
+.titleLivro {
+    font-size: 1.2rem; /* Use rem para dimensionamento responsivo */
+    margin-bottom: 5px; /* Adicionando espaço entre o título e o preço */
+}
+
+.titleLivro a {
+    color: #000;
+    text-decoration: none; /* Removendo sublinhado do link */
+    font-size: clamp(8px, 6vw, 26px);
+}
+
+/* Preço do livro */
+.price {
+    font-size: 1rem; /* Use rem para dimensionamento responsivo */
+    color: rgb(2, 206, 2);
+    font-weight: 500;
+}
+
+
+/* Botão de remover */
+.remove {
+    width: 100%;
+    height: 2.5rem;
+    background-color: #fd3838;
+    font-size: 1.1rem; /* Use rem para dimensionamento responsivo */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none; /* Remova o contorno */
+}
+
+.remove:hover,
+.remove:active {
+    background-color: #ff5b5b;
+    font-size: 1rem; /* Mantenha o mesmo tamanho do botão ao passar o mouse ou clicar */
+}
+
+
+/* Seção finalizar carrinho */
+.finalizarCarrinho {
+    background-color: transparent;
+    padding: 15px;
+    border-top: 2px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Total do carrinho */
+.preçoTotal {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Botão de comprar */
+.finalizar {
+    background-color: #fd3838;
+    color: #fff;
+    border: 2px solid #fd3838;
+    padding: 10px 40px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 300ms;
+    outline: none !important; 
+}
+
+.finalizar:hover, .finalizar:active {
+    background-color: #fff;
+    color: #fd3838;
+    font-size: 1.1rem; /* Mantenha o mesmo tamanho do botão ao passar o mouse ou clicar */
+    transition: 300ms;
+}

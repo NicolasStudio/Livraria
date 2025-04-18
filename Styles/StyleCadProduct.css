@@ -1,0 +1,195 @@
+.boxProdutos{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 2px solid #333;
+}
+
+h6 {
+	color: #000;
+	font-size: 36px;
+	font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	margin: 30px 0 60px;
+}
+
+h6::after {
+	content: "";
+	width: 150px;
+	position: absolute;
+	margin: 0 auto;
+	height: 4px;
+	border-radius: 1px;
+	background: #7ac400;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+}
+
+.itensbox{
+    display: flex;
+    width: 100%;
+}
+
+/* Box onde vai ficar a imagem */
+.bordaImg{
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 230px;
+    height: 300px;
+    border: #333 solid 2px;
+    background-color: #ffff;
+    transition: 300ms;
+    box-shadow: 0 0.2rem 0.5rem #666;
+    cursor: pointer;
+}
+
+.bordaImg:hover{
+    transition: 300ms;
+    background-color: #d8d8d8;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.imagemProd, .txtImg{
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.imagemProd:hover, .txtImg{
+    opacity: 0.8;
+    transition: 300ms;
+}
+
+/* Inputs e Labels*/
+.infoLivro{
+    width: 65%;
+    margin-top: 5%;
+    display: block;
+}
+
+/* Label*/
+.lblTitleLivro, .lblTema, .lblAutor, .lblPreco, .lblDescricao{
+    color: #000;
+    width: 10%;
+    font-size: clamp(8px, 4vw, 22px);
+    font-weight: 500;
+    margin-left: 3%;
+}
+
+.lblPaginas{
+    color: #000;
+    width: 15%;
+    font-size: clamp(8px, 4vw, 22px);
+    font-weight: 500;
+    margin-left: 3%; 
+}
+
+/* Input*/
+.titulo, .tema, .autor{
+    color:#333;
+    font-size: clamp(8px, 4vw, 20px);
+    padding: 1px 8px;
+    font-weight: 400;
+    border: 2px solid #333;
+    box-shadow: 0px 3px 0.5rem #333;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    width: 50%;
+    outline: none;
+}
+
+.preco, .paginas{
+    color:#333;
+    font-size: clamp(8px, 4vw, 20px);
+    padding: 1px 8px;
+    font-weight: 400;
+    border: 2px solid #333;
+    box-shadow: 0px 3px 0.5rem #333;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    width: 20%;
+    outline: none;
+}
+
+.infoLivro2{
+    width: 60%;
+    margin-left: 20%;
+}
+
+.textDesc{
+    border: 2px solid #333;
+    width: 100%;
+    padding: 1px 8px;
+    font-size: 18px;
+}
+
+.concluirCad{
+    width: 40%;
+    height: 2.5rem;
+    background-color: #05b130;
+    font-size: 1.2rem; /* Use rem para dimensionamento responsivo */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-bottom: 4%;
+    outline: none !important; 
+}
+
+.concluirCad:hover, .concluirCad.entrar:active {
+    background-color: #3cbd5c;
+    font-size: 1.1rem; /* Mantenha o mesmo tamanho do botão ao passar o mouse ou clicar */
+}
+
+.excluirCad{
+    width: 40%;
+    height: 2.5rem;
+    background-color: #ec0c04;
+    font-size: 1.2rem; /* Use rem para dimensionamento responsivo */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-bottom: 4%;
+    outline: none !important; 
+}
+
+.excluirCad:hover, .excluirCad.entrar:active {
+    background-color: #ff120a;
+    font-size: 1.1rem; /* Mantenha o mesmo tamanho do botão ao passar o mouse ou clicar */
+}
+
+.titleExcluir {
+	color: #000;
+	font-size: 36px;
+	font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	margin: 30px 0 60px;
+}
+
+.titleExcluir::after {
+	content: "";
+	width: 180px;
+	position: absolute;
+	margin: 0 auto;
+	height: 4px;
+	border-radius: 1px;
+	background: #ff120a;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+}

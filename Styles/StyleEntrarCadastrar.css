@@ -1,0 +1,213 @@
+.boxEntrarCadastrar{
+    width: 40%;
+    height: auto;
+    border: 2px solid #333;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-bottom: 5%;
+}
+
+h4 {
+	color: #000;
+	font-size: 36px;
+	font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	margin: 30px 0 60px;
+}
+
+h4::after {
+	content: "";
+	width: 60px;
+	position: absolute;
+	margin: 0 auto;
+	height: 4px;
+	border-radius: 1px;
+	background: #7ac400;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+}
+
+.lblTitle{
+    color: #000;
+    width: 10%;
+    font-size: clamp(8px, 4vw, 22px);
+    font-weight: 500;
+    margin-left: 4%;
+}
+
+.email, .senha{
+    color:#333;
+    font-size: clamp(8px, 4vw, 20px);
+    padding: 1px 8px;
+    font-weight: 400;
+    border: 3px solid #333;
+    box-shadow: 0px 3px 0.5rem #333;
+    margin-left: 20px;
+    outline: none;
+
+}
+.email{
+    width: 53%;
+    margin-bottom: 14px;
+}
+
+.senha{
+    width: 30%;
+    margin-bottom: 15px;
+}
+
+.boxEntrarCadastrar a{
+    color: red;
+    text-decoration: none;
+    margin-left: 30%;
+}
+
+.entrar{
+    width: 40%;
+    height: 2.5rem;
+    background-color: #05b130;
+    font-size: 1.2rem; /* Use rem para dimensionamento responsivo */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-bottom: 4%;
+    outline: none !important; 
+}
+
+.entrar:hover, .entrar:active {
+    background-color: #3cbd5c;
+    font-size: 1.1rem; /* Mantenha o mesmo tamanho do botão ao passar o mouse ou clicar */
+}
+
+/* ------------------------------- CADASTRO ------------------------------- */
+
+.emailCad, .senhaCad, .senhaCad2{
+    color:#333;
+    font-size: clamp(8px, 4vw, 20px);
+    padding: 1px 8px;
+    font-weight: 400;
+    border: 3px solid #333;
+    box-shadow: 0px 3px 0.5rem #333;
+    margin-left: 20px;
+    outline: none;
+}
+
+.emailCad{
+    width: 53%;
+    margin-bottom: 14px;
+}
+
+.senhaCad, .senhaCad2{
+    width: 30%;
+    margin-bottom: 15px;
+}
+
+.avancarCad, .concluirCad{
+    width: 40%;
+    height: 2.5rem;
+    background-color: #05b130;
+    font-size: 1.2rem; /* Use rem para dimensionamento responsivo */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-bottom: 4%;
+    outline: none !important; 
+}
+
+.avancarCad:hover, .avancarCad:active, .concluirCad:hover, .concluirCad.entrar:active {
+    background-color: #3cbd5c;
+    font-size: 1.1rem; /* Mantenha o mesmo tamanho do botão ao passar o mouse ou clicar */
+}
+
+.primeirosDados{
+    display: block;
+    margin-bottom: 5%;
+}
+
+.segudosDados{
+    display: block;
+    margin-top: 5%;
+}
+
+.lblTitle2{
+    color: #000;
+    width: 25%;
+    font-size: clamp(8px, 4vw, 22px);
+    font-weight: 500;
+    margin-left: 4%;
+}
+
+.lblTitle3{
+    color: #000;
+    width: 25%;
+    font-size: clamp(8px, 4vw, 22px);
+    font-weight: 500;
+    margin-left: 4%;
+}
+
+.cpfCad, .telCad, .dtnscCad, .nomeCad{
+    color:#333;
+    font-size: clamp(8px, 4vw, 20px);
+    padding: 1px 8px;
+    font-weight: 400;
+    border: 3px solid #333;
+    box-shadow: 0px 3px 0.5rem #333;
+    outline: none;
+}
+
+.nomeCad{
+    width: 53%;
+    margin-bottom: 14px;
+}
+
+.cpfCad, .telCad, .dtnscCad{
+    width: 30%;
+    margin-bottom: 14px;
+}
+
+.cep{
+    width: 15ch;
+    margin-bottom: 60px;
+}
+
+.logradouro{
+    width: 40ch;
+    margin-bottom: 14px;
+}
+
+.num, .estado{
+    width: 10ch;
+    margin-bottom: 15px;
+}
+
+.bairro{
+    width: 40ch;
+    margin-bottom: 14px;
+}
+
+.cidade{
+    width: 39.5ch;
+    margin-bottom: 14px;
+}
+
+.estado{
+    width: 10ch;
+}
+
+.cep, .logradouro, .num, .bairro, .cidade, .estado{
+    color:#333;
+    font-size: clamp(8px, 4vw, 20px);
+    padding: 1px 8px;
+    font-weight: 400;
+    border: 3px solid #333;
+    box-shadow: 0px 3px 0.5rem #333;
+    margin-left: 20px;
+    outline: none;
+}
